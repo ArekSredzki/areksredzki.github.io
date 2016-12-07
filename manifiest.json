@@ -1,5 +1,7 @@
 {
   "short_name": "arek.io",
   "name": "Arek Sredzki - Autonomous Vehicle Software Engineer",
-  "display": "browser"
+  "display": "browser",
+  "lang": "en-US",
+  "start_url": "/",
 }
