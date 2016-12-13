@@ -7,47 +7,38 @@ $(document).ready(function() {
     return false;
   });
 
-
-  /* Sticky menu */
-  $(".navbar").sticky({
-    topSpacing: 0
-  });
-
-
   /* Scroll spy and scroll filter */
   $('#main-menu').onePageNav({
-    currentClass: "active",
+    currentClass: 'active',
     changeHash: false,
     scrollThreshold: 0.5,
     scrollSpeed: 750,
-    filter: "",
-    easing: "swing"
+    filter: '',
+    easing: 'swing'
   });
 
 
   /* VEGAS Home Slider */
-  $.vegas('slideshow', {
-    backgrounds: [
-      {
-        src: 'img/slider/01.jpg',
-        fade: 1000
-      }, {
-        src: 'img/slider/02.jpg',
-        fade: 1000
-      }, {
-        src: 'img/slider/03.jpg',
-        fade: 1000
-      }, {
-        src: 'img/slider/04.jpg',
-        fade: 1000
-      }
-    ]
+  $('body').vegas({
+    delay: 5000,
+    transition: 'fade',
+    transitionDuration: 1000,
+    color: '#555555',
+    slides: [{
+      src: '/img/slider/01.jpg'
+    }, {
+      src: '/img/slider/02.jpg'
+    }, {
+      src: '/img/slider/03.jpg'
+    }, {
+      src: '/img/slider/04.jpg'
+    }]
   });
-  $("#vegas-next").click(function() {
-    $.vegas('next');
+  $('#vegas-next').click(function() {
+    $('body').vegas('next');
   });
-  $("#vegas-prev").click(function() {
-    $.vegas('previous');
+  $('#vegas-prev').click(function() {
+    $('body').vegas('previous');
   });
 
 });
