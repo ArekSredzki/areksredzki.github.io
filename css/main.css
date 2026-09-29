@@ -150,17 +150,6 @@ h6 {
   background: #fff;
 }
 
-#page-apps .app {
-  height: 100%;
-}
-
-#page-apps .app-icon {
-  display: block;
-  width: 72px;
-  height: 72px;
-  margin-bottom: 16px;
-}
-
 #page-apps .row {
   display: flex;
   flex-wrap: wrap;
@@ -169,6 +158,111 @@ h6 {
 #page-apps .row > [class*="col-"] {
   display: flex;
   margin-bottom: 30px;
+}
+
+#page-apps .app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 28px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e6e8eb;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .06);
+  transition: box-shadow .2s, transform .2s;
+}
+
+#page-apps .app:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, .1);
+}
+
+#page-apps .app-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+#page-apps .app-icon {
+  flex: none;
+  width: 64px;
+  height: 64px;
+}
+
+#page-apps .app h3 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#page-apps .app h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+#page-apps .app-kind {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #2ecc71;
+}
+
+#page-apps .app-lede {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #444;
+}
+
+#page-apps .app ul {
+  margin: 0 0 20px;
+  padding-left: 18px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#page-apps .app ul li {
+  margin-bottom: 4px;
+}
+
+#page-apps .app {
+  position: relative;
+}
+
+/* the whole card is the link (through the visit button's overlay) */
+#page-apps .app-visit {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 11px 20px;
+  border-radius: 24px;
+  background: #2ecc71;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background .2s;
+}
+
+#page-apps .app-visit::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+}
+
+#page-apps .app-visit:hover,
+#page-apps .app:hover .app-visit {
+  background: #27ae60;
+  color: #fff;
+}
+
+#page-apps .app-visit:focus-visible {
+  outline: 3px solid #27ae60;
+  outline-offset: 3px;
 }
 
 #page-education {

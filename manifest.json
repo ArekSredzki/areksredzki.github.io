@@ -1,7 +1,10 @@
 {
   "short_name": "arek.io",
-  "name": "Arek Sredzki - Autonomous Vehicle Software Engineer",
+  "name": "Arek Sredzki - Autonomy Engineering Leader",
   "display": "browser",
   "lang": "en-US",
   "start_url": "/",
+  "icons": [
+    { "src": "/img/apple-touch-icon-114x114.png", "sizes": "114x114", "type": "image/png" }
+  ]
 }
