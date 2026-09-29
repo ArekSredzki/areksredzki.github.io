@@ -145,9 +145,35 @@ h6 {
   background: #f7f7f7;
 }
 
-#page-education {
+#page-apps {
   padding: 75px 0;
   background: #fff;
+}
+
+#page-apps .app {
+  height: 100%;
+}
+
+#page-apps .app-icon {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 16px;
+}
+
+#page-apps .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#page-apps .row > [class*="col-"] {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#page-education {
+  padding: 75px 0;
+  background: #f7f7f7;
 }
 
 #page-experience {
@@ -157,11 +183,12 @@ h6 {
 
 #page-resume {
   padding: 75px 0;
-  background: #f7f7f7;
+  background: #fff;
 }
 
 #page-contact {
   padding: 75px 0;
+  background: #f7f7f7;
 }
 
 #page-contact .contact-info p {
